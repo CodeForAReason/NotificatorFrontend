@@ -8,7 +8,7 @@ Setup
 
 * install nodejs and npm
 
-run (with sudo if linux or macosx):
+run (with sudo if linux or macosx)::
 
     npm install -g yo grunt-cli bower cordova
     npm install
