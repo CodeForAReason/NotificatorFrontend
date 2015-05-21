@@ -10,7 +10,7 @@ Setup
 
 run (with sudo if linux or macosx)::
 
-    npm install -g yo grunt-cli bower cordova
+    npm install -g yo grunt-cli bower cordova jshint
     npm install
     bower install
     grunt server
