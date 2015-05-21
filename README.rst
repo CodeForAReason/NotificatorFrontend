@@ -31,10 +31,14 @@ to build android app install android sdk, on linux::
     android update sdk -a --no-ui --filter "build-tools-19.1.0"
     android create avd --name myandroid -t "android-19"
 
-    mkdir -p phonegap/{merges,platforms,plugins,www}
-    grunt build-platform
+    mkdir phonegap
     cd phonegap
+    cordova create .
     cordova platform add android
+    rm config.xml
+    cd ..
+    grunt platform-build
+    cd phonegap
     cordova run --device android
 
 for the last step you need to have your android device connected via usb and
