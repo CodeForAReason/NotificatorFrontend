@@ -276,6 +276,8 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        requirejs: {
         }
     });
 
@@ -306,6 +308,7 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
+        'requirejs',
         'concat',
         'cssmin',
         'uglify',
