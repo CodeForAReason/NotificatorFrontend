@@ -317,10 +317,10 @@ module.exports = function (grunt) {
         'usemin'
     ]);
 
-	grunt.registerTask('platform-build', [
-		'default',
-		'phonegap:build'
-	]);
+    grunt.registerTask('platform-build', [
+        'default',
+        'phonegap:build'
+    ]);
 
     grunt.registerTask('default', [
         'jshint',
