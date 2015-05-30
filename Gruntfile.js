@@ -8,29 +8,29 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-	// show elapsed time at the end
-	require('time-grunt')(grunt);
-	// load all grunt tasks
-	require('load-grunt-tasks')(grunt);
+    // show elapsed time at the end
+    require('time-grunt')(grunt);
+    // load all grunt tasks
+    require('load-grunt-tasks')(grunt);
 
-	grunt.initConfig({
-		// configurable paths
-		yeoman: {
-			app: 'app',
-			dist: 'dist'
-		},
+    grunt.initConfig({
+        // configurable paths
+        yeoman: {
+            app: 'app',
+            dist: 'dist'
+        },
 
-		phonegap: {
-			config: {
-				root: 'dist',
-				config: 'config.xml',
-				cordova: '.cordova',
-				path: 'phonegap',
-				plugins: [],
-				platforms: ['android'],
-				verbose: false
-			}
-		},
+        phonegap: {
+            config: {
+                root: 'dist',
+                config: 'config.xml',
+                cordova: '.cordova',
+                path: 'phonegap',
+                plugins: [],
+                platforms: ['android'],
+                verbose: false
+            }
+        },
 
         watch: {
             compass: {
@@ -109,15 +109,15 @@ module.exports = function (grunt) {
                 'test/spec/{,*/}*.js'
             ]
         },
-		karma: {
-			options: {
-				files: ['test/**/*.js']
-			},
-			continuous: {
-			},
-			dev: {
-			}
-		},
+        karma: {
+            options: {
+                files: ['test/**/*.js']
+            },
+            continuous: {
+            },
+            dev: {
+            }
+        },
         mocha: {
             all: {
                 options: {
@@ -250,7 +250,7 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-						'res/**',
+                        'res/**',
                         'styles/fonts/{,*/}*.*'
                     ]
                 }]
