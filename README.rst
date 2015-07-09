@@ -17,7 +17,9 @@ run (with sudo if linux or macosx)::
 
 visit http://127.0.0.1:9000
 
-to build android app install android sdk, on linux::
+To build android app 
+---------------------
+install android sdk, on linux::
 
     wget http://dl.google.com/android/android-sdk_r24.0.2-linux.tgz
     tar -xzf android-sdk_r24.0.2-linux.tgz
@@ -31,6 +33,10 @@ to build android app install android sdk, on linux::
     android update sdk -a --no-ui --filter "build-tools-19.1.0"
     android create avd --name myandroid -t "android-19"
 
+install phonegap::
+
+    npm install -g phonegap@latest
+    
     mkdir phonegap
     cd phonegap
     cordova create .
